@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero{
+  @apply flex flex-col justify-center
+}
+.header{
+    @apply flex-col flex-wrap
+  }
+
+
+.navbar{
+    @apply   flex border-slate-950 justify-between flex-wrap z-0
+  }
+.github-button{
+    @apply   bg-black text-cyan-50 h-[40px] w-[80px] my-3.5 mx-3 rounded-full 
+    hover:bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500  ring-orange-300 ;
+  }
+
+
+.header_text {
+    @apply text-center text-2xl font-extrabold 
+     justify-center
+  }
+
+
+.openAi{
+    @apply  bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+      
+}

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Summary{
+    @apply snap-y
+}
+.inputArea{
+    @apply flex flex-row justify-center pl-36 mt-4
+}
+.inputBox{
+    @apply  w-[40vw] h-8 border border-black rounded-lg  pl-4  shadow-lg shadow-orange-300 focus:outline-none focus:border-orange-400 focus:ring-orange-400 focus:ring-1
+}
+.summarizeButton{
+    @apply ml-10 bg-black border rounded-md ring-black ring-1 text-white h-8 w-[9vw] shadow-lg shadow-orange-300 
+     hover:bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500  ring-orange-300;
+     
+}
+
+
+ 
+.Header_Text_Article{
+
+    @apply text-lg  font-extrabold text-black
+
+} 
+
+.summary_text{
+    @apply    shadow-lg shadow-orange-300 border rounded-md my-3 text-black 
+}
+
+.copy_button{
+    @apply ml-5 my-3 bg-black border rounded-md ring-black ring-1 text-white h-8 w-[9vw] shadow-lg shadow-orange-300 
+    hover:bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500  ring-orange-300;
+}
