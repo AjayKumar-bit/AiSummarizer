@@ -1,9 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
 
 .hero{
-  @apply flex flex-col justify-center
+  @apply flex flex-col justify-center w-screen
+  
+  
+  
+
+  
 }
 .header{
     @apply flex-col flex-wrap
@@ -11,11 +17,12 @@
 
 
 .navbar{
-    @apply   flex border-slate-950 justify-between flex-wrap z-0
+    
+    
   }
 .github-button{
     @apply   bg-black text-cyan-50 h-[40px] w-[80px] my-3.5 mx-3 rounded-full 
-    hover:bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500  ring-orange-300 ;
+    ;
   }
 
 
@@ -26,6 +33,34 @@
 
 
 .openAi{
-    @apply  bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+   
       
+}
+
+
+
+
+     */
+
+
+
+.hero{
+  @apply flex flex-col justify-center 
+  w-screen
+
+}     
+.navbar{
+  @apply   flex  flex-row justify-between flex-wrap 
+   w-screen
+}
+
+.github-button{
+  @apply bg-black text-white rounded-lg h-6 w-16  mt-5  mr-2
+  hover:bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 hover:text-black ring-orange-300 
+}
+.header_text{
+  @apply flex flex-col items-center font-extrabold sm:text-2xl
+}
+.openAi{
+  @apply text-4xl  bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent mb-1
 }

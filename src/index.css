@@ -3,24 +3,21 @@
 @tailwind utilities;
 
 *{
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+  
 
 }
 
 
 .main {
+  @apply w-screen min-h-screen fixed flex flex-col bg-orange-100	
+ 
   
-  width: 100vw;
-  min-height: 100vh;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  
-  /* align-items:center; */
-  padding: 0px 24px 0px 24px;
-  background-color:cornsilk;
+
+ 
   
  
 }
+
+
 

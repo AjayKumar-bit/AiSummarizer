@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import "./Summary.css"
 import { useLazyGetSummaryQuery } from '../Services/Article'
-import copy from '../assets/image/copy.svg'
+
 import loader from "../assets/image/loader.svg"
 
 
@@ -59,21 +59,25 @@ function Summary() {
     <section className='Summary' >
        <div className='inputArea'>
      
-           <form onSubmit={handleSubmit}>
-                  <input className="inputBox" type='text' value={article.url} placeholder='Paste article link Here' onChange={(e) => setArticle({ ...article, url: e.target.value })}>
+           
+                  <input className="inputBox" type='text' value={article.url} placeholder='Paste article link Here'
+                   onChange={(e) => setArticle({ ...article, url: e.target.value })}
+                   >
 
                   </input>
 
-                  <button className='summarizeButton bg-black' type='submit'>
+                  <button className='summarizeButton ' onClick={handleSubmit}>
                       Summarize
                   </button>
                   
-           </form>
+          
          </div>  
        
-        <div className='article w-full flex justify-center items-center h-auto '>
+        <div className='article'>
+                  
+
               {(isFetching)?(
-                <img src={loader} alt='loading....' className='w-10 h-10'>
+                <img src={loader} alt='loading....' className='w-10 h-10 '>
 
                 </img>
               ):error?(
@@ -82,12 +86,12 @@ function Summary() {
                 </p>
               ): (
                 article.summary && (
-                  <div>
+                  <div className='artcle-div'>
                     <p className='Header_Text_Article '>
-                       
-                          Summary
-                       
+                        Summary
                     </p>
+
+                    
                     <div className='summary_text'>
                         <p className='px-6 py-3'>
                           {article.summary}

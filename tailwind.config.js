@@ -6,7 +6,9 @@ export default {
   ],
   theme: {
     extend: {
-      
+      screens:{
+        "custom-sm":"300"
+      }
     },
   },
   plugins: [],

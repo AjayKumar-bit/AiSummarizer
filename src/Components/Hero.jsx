@@ -3,25 +3,27 @@ import AiSumm from '../assets/AiSumm.png'
 import "./hero.css"
 
 
-function handleclick(e){
+function handlegithub(e){
     e.preventDefault()
-    // window.open()
+    window.open("https://github.com/AjayKumar-bit/AiSummarizer","_blank")
 }
 function Hero() {
   return (
-   <header className='hero' >
+   <header className='hero ' >
       <nav className='navbar '>
-          <img src={AiSumm} alt='logo' className='w-28   '/>
+          <img src={AiSumm} alt='logo' className='w-28 contrast-150 '/>
 
-          <button onClick={handleclick} className='github-button '>GITHUB</button>
+          <button onClick={handlegithub} className='github-button '>GitHub</button>
 
       </nav>
       
       <h1 className='header_text'>
-            Summarize Article with
-            <br className='max-sm:hidden'/>
+            <p>Summarize Article with</p>
+            
             <span className='openAi'>AiSummarizer</span>  
       </h1>
+      
+
 
       
       
