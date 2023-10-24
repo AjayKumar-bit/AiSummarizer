@@ -6,6 +6,7 @@ import "./hero.css"
 function handlegithub(e){
     e.preventDefault()
     window.open("https://github.com/AjayKumar-bit/AiSummarizer","_blank")
+    
 }
 function Hero() {
   return (
