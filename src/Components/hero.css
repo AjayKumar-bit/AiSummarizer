@@ -55,7 +55,7 @@
 }
 
 .github-button{
-  @apply bg-black text-white rounded-lg h-6 w-16  mt-5  mr-2
+  @apply bg-black text-white rounded-lg h-6 w-16  mt-4  mr-2
   hover:bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 hover:text-black ring-orange-300 
 }
 .header_text{
