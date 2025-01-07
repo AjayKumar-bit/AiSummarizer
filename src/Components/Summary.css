@@ -1,48 +1,36 @@
- @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-.Summary{
-    @apply flex flex-col
+.Summary {
+  @apply flex flex-col;
 }
-.inputArea{
-    @apply flex flex-col py-3 items-center
+.inputArea {
+  @apply flex flex-col py-3 items-center;
 }
-
-.inputBox{
-    @apply w-[75vw] h-9 
+.inputBox {
+  @apply w-[75vw] h-9 
     border border-black rounded-lg 
-    focus:outline-none focus:border-orange-400 focus:ring-orange-400 focus:ring-1
-
+    focus:outline-none focus:border-orange-400 focus:ring-orange-400 focus:ring-1;
 }
-.inputBox::placeholder{
-    @apply text-center
+.inputBox::placeholder {
+  @apply text-center;
 }
-.summarizeButton{
-    @apply mt-2 bg-black text-white rounded-lg px-3 pb-1
-    hover:bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500  ring-orange-300 hover:text-black
-     
+.summarizeButton {
+  @apply mt-2 bg-black text-white rounded-lg px-3 pb-1
+    hover:bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500  ring-orange-300 hover:text-black;
 }
 .article {
-    @apply flex flex-col overflow-auto items-center
-    max-h-[65vh]
-  }
-
-
-  
-.Header_Text_Article{
-
-    @apply text-lg  font-extrabold text-black ml-3 
-
-} 
-
-.summary_text{
-    @apply    shadow-lg  border rounded-md my-2 text-black shadow-md shadow-orange-300  
+  @apply flex flex-col overflow-auto items-center
+    max-h-[65vh];
 }
-
-.copy_button{
-    @apply ml-5 my-3 bg-black border rounded-md ring-black ring-1 text-white h-8 w-[20vw] sm:w-[8vw] shadow-md shadow-orange-300
+.Header_Text_Article {
+  @apply text-lg  font-extrabold text-black ml-3;
+}
+.summary_text {
+  @apply shadow-lg  border rounded-md my-2 text-black shadow-md shadow-orange-300;
+}
+.copy_button {
+  @apply ml-5 my-3 bg-black border rounded-md ring-black ring-1 text-white h-8 w-[20vw] sm:w-[8vw] shadow-md shadow-orange-300
     hover:bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500  ring-orange-300;
 }

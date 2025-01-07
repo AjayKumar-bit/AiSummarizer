@@ -2,22 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   box-sizing: border-box;
-  
-
 }
-
 
 .main {
-  @apply w-screen min-h-screen fixed flex flex-col bg-orange-100	
- 
-  
-
- 
-  
- 
+  @apply w-screen min-h-screen fixed flex flex-col bg-orange-100;
 }
-
-
-
